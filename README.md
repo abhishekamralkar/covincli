@@ -1,4 +1,4 @@
-#+title: COV-IN-CLI
+# COVINCLI
 
 The Corona pandemic is on everyone's mind. There are many shiny GUI's available to visualize the
 COVID19-India Data. Thanks to all of them.
@@ -9,32 +9,31 @@ The data source for my tool is https://api.covid19india.org/. A big shout out to
 for there amazing dedication and bring us the formated data and GUI.
 
 
-* COV-IN-CLI
+# COVINCLI
 
 A CLI written in Python3 to get the Covid19-India data.
 
 
-*** Prerequisite
+### Prerequisite
 
   - You need nothing more than a basic installation of Python 3.6 or newer and time to work on it.
   - Virtualenv
 
 Follow below step to install and setup the Python Virtual Env
 
-#+begin_src
+```
 sudo pip3 install virtualenv
 python3 -m venv covid19
 source covid19/bin/activate
 pip3 install -r requirements.txt
-#+end_src
+```
 
-
-*** Goal
+### Goal
 
 An attempt to create a 1st COVID-19 India CLI.
 
 
-*** Currently tool support 7 subcommands
+### Currently tool support 7 subcommands
 
      - country
      - district
@@ -50,15 +49,15 @@ Note:
      - This is a fun project for me.
      - I am not Python expert
 
-** Run CLI
+## Run CLI
 
-*** Country(country)
+### Country(country)
 
 Command country accepts 1 flag
 
  - active / confirmed / recovered / deceased
 
-#+begin_src
+```
 ❯ covid19/bin/python3 covid.py country -a confirmed
 Total confirmed cases in India are : 336370
 
@@ -70,10 +69,9 @@ Total recovered cases in India are : 172578
 
 ❯ covid19/bin/python3 covid.py country -a deceased
 Total deceased cases in India are : 9597
-#+end_src
+```
 
-
-*** State(state)
+### State(state)
 
 Command state accepts 2 flags
 
@@ -86,15 +84,15 @@ Note:- To get Indian States and Union Territories names please refer below Wiki
 
 or you can run a CLI itself to get Indian States and Union Territories names
 
-#+BEGIN_SRC
+```
 covid19/bin/python3 covid.py states-name
 
 India's States and Union Territories Names are:
 <--******************************************-->
 ['Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Delhi', 'Dadra and Nagar Haveli and Daman and Diu', 'Goa', 'Gujarat', 'Himachal Pradesh', 'Haryana', 'Jharkhand', 'Jammu and Kashmir', 'Karnataka', 'Kerala', 'Ladakh', 'Lakshadweep', 'Maharashtra', 'Meghalaya', 'Manipur', 'Madhya Pradesh', 'Mizoram', 'Nagaland', 'Odisha', 'Punjab', 'Puducherry', 'Rajasthan', 'Sikkim', 'Telangana', 'Tamil Nadu', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']
-#+END_SRC
+```
 
-#+BEGIN_SRC
+```
 ❯ covid19/bin/python3 covid.py state 'Madhya Pradesh' -a confirmed
 Total confirmed cases in Madhya Pradesh are: 10935
 
@@ -106,10 +104,10 @@ Total recovered cases in Madhya Pradesh are: 7903
 
 ❯ covid19/bin/python3 covid.py state 'Madhya Pradesh' -a deceased
 Total deceased cases in Madhya Pradesh are: 465
-#+END_SRC
+```
 
 
-*** District(district)
+### District(district)
 
 Command district accepts 3 flags
 
@@ -123,15 +121,15 @@ Note:- To get Indian States and Union Territories names and respective districts
 
 or you can CLI itself to get the districts in a state
 
-#+BEGIN_SRC
+```
 covid19/bin/python3 covid.py districts-name 'Madhya Pradesh'
 
 State Madhya Pradesh districts names are:
 <-******************************************->
 ['Agar Malwa', 'Alirajpur', 'Anuppur', 'Ashoknagar', 'Balaghat', 'Barwani', 'Betul', 'Bhind', 'Bhopal', 'Burhanpur', 'Chhatarpur', 'Chhindwara', 'Damoh', 'Datia', 'Dewas', 'Dhar', 'Dindori', 'Guna', 'Gwalior', 'Harda', 'Hoshangabad', 'Indore', 'Jabalpur', 'Jhabua', 'Katni', 'Khandwa', 'Khargone', 'Mandla', 'Mandsaur', 'Morena', 'Narsinghpur', 'Neemuch', 'Niwari', 'Other Region', 'Panna', 'Raisen', 'Rajgarh', 'Ratlam', 'Rewa', 'Sagar', 'Satna', 'Sehore', 'Seoni', 'Shahdol', 'Shajapur', 'Sheopur', 'Shivpuri', 'Sidhi', 'Singrauli', 'Tikamgarh', 'Ujjain', 'Umaria', 'Vidisha']
-#+END_SRC
+```
 
-#+BEGIN_SRC
+```
 ❯ covid19/bin/python3 covid.py district 'Madhya Pradesh' 'Indore' -a active
 active cases in district Indore are: 989
 
@@ -146,10 +144,10 @@ recovered cases in district Indore are: 2906
 
 ❯ covid19/bin/python3 covid.py district 'Madhya Pradesh' 'Indore' -a deceased
 deceased cases in district Indore are: 174
-#+END_SRC
+```
 
 
-*** District Cases(districts-cases)
+### District Cases(districts-cases)
 
 Command district-cases accepts 2 flags
 
@@ -157,7 +155,7 @@ Command district-cases accepts 2 flags
  - active / confirmed / deceased / recovered
 
 
-#+BEGIN_SRC
+```
 covid19/bin/python3 covid.py district-cases 'Madhya Pradesh' -a active
 
 active cases in district Agar Malwa are: 2
@@ -167,17 +165,16 @@ active cases in district Ashoknagar are: 15
 active cases in district Balaghat are: 5
 active cases in district Barwani are: 9
 active cases in district Betul are: 4
-#+END_SRC
+```
 
-
-*** State Cases(state-cases)
+### State Cases(state-cases)
 
 Command state-cases accepts 1 flag
 
  - statename
 
 
-#+BEGIN_SRC
+```
 ❯ covid19/bin/python3 covid.py state-cases 'Madhya Pradesh'
 
 <-****************************************************->
@@ -194,6 +191,4 @@ deceased 1
 recovered 12
 
 delta {'confirmed': 0, 'deceased': 0, 'recovered': 0}
-
-
-#+END_SRC
+```
