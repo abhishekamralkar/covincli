@@ -1,9 +1,0 @@
-README.md
-setup.py
-covincli/__init__.py
-covincli/covincli.py
-covincli/setup.py
-covincli.egg-info/PKG-INFO
-covincli.egg-info/SOURCES.txt
-covincli.egg-info/dependency_links.txt
-covincli.egg-info/top_level.txt
