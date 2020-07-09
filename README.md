@@ -1,3 +1,5 @@
+![Upload Python Package](https://github.com/abhishekamralkar/covincli/workflows/Upload%20Python%20Package/badge.svg)
+
 # COVINCLI
 
 The Corona pandemic is on everyone's mind. There are many shiny GUI's available to visualize the
