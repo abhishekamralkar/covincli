@@ -1,6 +1,6 @@
 ![Upload Python Package](https://github.com/abhishekamralkar/covincli/workflows/Upload%20Python%20Package/badge.svg)
 
-# COVINCLI
+# COVIN-CLI
 
 The Corona pandemic is on everyone's mind. There are many shiny GUI's available to visualize the
 COVID19-India Data. Thanks to all of them.
@@ -11,7 +11,7 @@ The data source for my tool is https://api.covid19india.org/. A big shout out to
 for there amazing dedication and bring us the formated data and GUI.
 
 
-# COVINCLI
+# COVIN-CLI
 
 A CLI written in Python3 to get the Covid19-India data.
 
@@ -21,14 +21,6 @@ A CLI written in Python3 to get the Covid19-India data.
   - You need nothing more than a basic installation of Python 3.6 or newer and time to work on it.
   - Virtualenv
 
-Follow below step to install and setup the Python Virtual Env
-
-```
-sudo pip3 install virtualenv
-python3 -m venv covid19
-source covid19/bin/activate
-pip3 install -r requirements.txt
-```
 
 ### Goal
 
