@@ -1,5 +1,14 @@
 ![Upload Python Package](https://github.com/abhishekamralkar/covincli/workflows/Upload%20Python%20Package/badge.svg)
 
+
+<p align="center">
+   <img src="https://raw.githubusercontent.com/abhishekamralkar/covincli/master/docs/static/images.jpeg" width="200">
+</p>
+
+# covcli — Covid India CLI
+---
+
+
 # COVIN-CLI
 
 The Corona pandemic is on everyone's mind. There are many shiny GUI's available to visualize the
