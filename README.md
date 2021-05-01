@@ -136,20 +136,18 @@ State Madhya Pradesh districts names are:
 ```
 
 ```
-❯ covid19/bin/python3 covid.py district 'Madhya Pradesh' 'Indore' -a active
-active cases in district Indore are: 989
+python3 covin-cli.py district 'Madhya Pradesh' 'Indore' -a active
+active cases in district Indore are: 12278
 
-❯ covid19/bin/python3 covid.py district 'Madhya Pradesh' 'Indore' -a confirmed
-confirmed cases in district Indore are: 4069
+python3 covin-cli.py district 'Madhya Pradesh' 'Indore' -a confirmed
+confirmed cases in district Indore are: 110840
 
-❯ covid19/bin/python3 covid.py district 'Madhya Pradesh' 'Indore' -a active
-active cases in district Indore are: 989
+python3 covin-cli.py district 'Madhya Pradesh' 'Indore' -a recovered
+recovered cases in district Indore are: 97423
 
-❯ covid19/bin/python3 covid.py district 'Madhya Pradesh' 'Indore' -a recovered
-recovered cases in district Indore are: 2906
+python3 covin-cli.py district 'Madhya Pradesh' 'Indore' -a deceased
+deceased cases in district Indore are: 1139
 
-❯ covid19/bin/python3 covid.py district 'Madhya Pradesh' 'Indore' -a deceased
-deceased cases in district Indore are: 174
 ```
 
 
