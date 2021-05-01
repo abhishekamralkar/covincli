@@ -167,15 +167,22 @@ Command district-cases accepts 2 flags
 
 
 ```
-covid19/bin/python3 covid.py district-cases 'Madhya Pradesh' -a active
+python3 covin-cli.py districts-cases 'Madhya Pradesh' -a active
+```
 
-active cases in district Agar Malwa are: 2
-active cases in district Alirajpur are: 0
-active cases in district Anuppur are: 5
-active cases in district Ashoknagar are: 15
-active cases in district Balaghat are: 5
-active cases in district Barwani are: 9
-active cases in district Betul are: 4
+```
+active cases in district Agar Malwa are: 384
+active cases in district Alirajpur are: 472
+active cases in district Anuppur are: 838
+active cases in district Ashoknagar are: 707
+active cases in district Balaghat are: 1156
+active cases in district Barwani are: 767
+active cases in district Betul are: 1809
+active cases in district Bhind are: 282
+active cases in district Bhopal are: 12955
+active cases in district Burhanpur are: 164
+active cases in district Chhatarpur are: 609
+
 ```
 
 ### State Cases(state-cases)
@@ -186,20 +193,25 @@ Command state-cases accepts 1 flag
 
 
 ```
-❯ covid19/bin/python3 covid.py state-cases 'Madhya Pradesh'
+python3 covin-cli.py state-cases 'Madhya Pradesh'
+```
 
-<-****************************************************->
+```
+------------------------------------------------------------
 Covid19 information for district Agar Malwa
-<-****************************************************->
-notes
+------------------------------------------------------------
+notes 
 
-active 2
+active 384
 
-confirmed 15
+confirmed 2241
 
-deceased 1
+migratedother 0
 
-recovered 12
+deceased 23
+
+recovered 1834
 
 delta {'confirmed': 0, 'deceased': 0, 'recovered': 0}
+
 ```
