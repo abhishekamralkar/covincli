@@ -27,7 +27,7 @@ A CLI written in Python3 to get the Covid19-India data.
 
 ### Prerequisite
 
-  - You need nothing more than a basic installation of Python 3.6 or newer and time to work on it.
+  - You need nothing more than a basic installation of Python 3 or newer and time to work on it.
   - Virtualenv
 
 
@@ -49,8 +49,9 @@ An attempt to create a 1st COVID-19 India CLI.
 Note:
 
      - The CLI is still WIP and the arguments may change over the period of time.
-     - This is a fun project for me.
-     - I am not Python expert
+     - This is a  project for me.
+     - I am not Python expert. The code might not be well organised or upto mark as of now.
+       But I will definitely try to make it upto mark.
 
 ## Run CLI
 
@@ -61,17 +62,18 @@ Command country accepts 1 flag
  - active / confirmed / recovered / deceased
 
 ```
-❯ covid19/bin/python3 covid.py country -a confirmed
-Total confirmed cases in India are : 336370
+python3 covin-cli.py country -a confirmed
+Total confirmed cases in India are : 19288819
 
-❯ covid19/bin/python3 covid.py country -a active
-Total active cases in India are : 154144
+python3 covin-cli.py country -a active
+Total active cases in India are : 3321542
 
-❯ covid19/bin/python3 covid.py country -a recovered
-Total recovered cases in India are : 172578
+python3 covin-cli.py country -a recovered
+Total recovered cases in India are : 15746000
 
-❯ covid19/bin/python3 covid.py country -a deceased
-Total deceased cases in India are : 9597
+python3 covin-cli.py country -a deceased
+Total deceased cases in India are : 212497
+
 ```
 
 ### State(state)
@@ -83,7 +85,7 @@ Command state accepts 2 flags
 
 Note:- To get Indian States and Union Territories names please refer below Wiki
 
-[[https://en.wikipedia.org/wiki/States_and_union_territories_of_India][Indian State and Union Territories]]
+[Indian State and Union Territories](https://en.wikipedia.org/wiki/States_and_union_territories_of_India)
 
 or you can run a CLI itself to get Indian States and Union Territories names
 
