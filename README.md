@@ -90,11 +90,16 @@ Note:- To get Indian States and Union Territories names please refer below Wiki
 or you can run a CLI itself to get Indian States and Union Territories names
 
 ```
-covid19/bin/python3 covid.py states-name
+python3 covin-cli.py states-name
+```
 
+```
 India's States and Union Territories Names are:
-<--******************************************-->
+------------------------------------------------------------
+Total States and Union Territories count in India is: 37
+
 ['Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Delhi', 'Dadra and Nagar Haveli and Daman and Diu', 'Goa', 'Gujarat', 'Himachal Pradesh', 'Haryana', 'Jharkhand', 'Jammu and Kashmir', 'Karnataka', 'Kerala', 'Ladakh', 'Lakshadweep', 'Maharashtra', 'Meghalaya', 'Manipur', 'Madhya Pradesh', 'Mizoram', 'Nagaland', 'Odisha', 'Punjab', 'Puducherry', 'Rajasthan', 'Sikkim', 'Telangana', 'Tamil Nadu', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']
+
 ```
 
 ```
@@ -128,10 +133,12 @@ Note:- To get Indian States and Union Territories names and respective districts
 or you can CLI itself to get the districts in a state
 
 ```
-covid19/bin/python3 covid.py districts-name 'Madhya Pradesh'
+python3 covin-cli.py districts-name 'Madhya Pradesh'
+```
 
+```
 State Madhya Pradesh districts names are:
-<-******************************************->
+------------------------------------------------------------
 ['Agar Malwa', 'Alirajpur', 'Anuppur', 'Ashoknagar', 'Balaghat', 'Barwani', 'Betul', 'Bhind', 'Bhopal', 'Burhanpur', 'Chhatarpur', 'Chhindwara', 'Damoh', 'Datia', 'Dewas', 'Dhar', 'Dindori', 'Guna', 'Gwalior', 'Harda', 'Hoshangabad', 'Indore', 'Jabalpur', 'Jhabua', 'Katni', 'Khandwa', 'Khargone', 'Mandla', 'Mandsaur', 'Morena', 'Narsinghpur', 'Neemuch', 'Niwari', 'Other Region', 'Panna', 'Raisen', 'Rajgarh', 'Ratlam', 'Rewa', 'Sagar', 'Satna', 'Sehore', 'Seoni', 'Shahdol', 'Shajapur', 'Sheopur', 'Shivpuri', 'Sidhi', 'Singrauli', 'Tikamgarh', 'Ujjain', 'Umaria', 'Vidisha']
 ```
 
