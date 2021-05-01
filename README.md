@@ -98,17 +98,18 @@ India's States and Union Territories Names are:
 ```
 
 ```
-❯ covid19/bin/python3 covid.py state 'Madhya Pradesh' -a confirmed
-Total confirmed cases in Madhya Pradesh are: 10935
+python3 covin-cli.py state 'Madhya Pradesh' -a confirmed
+Total confirmed cases in Madhya Pradesh are: 563327
 
-❯ covid19/bin/python3 covid.py state 'Madhya Pradesh' -a active
-Total active cases in Madhya Pradesh are: 2567
+python3 covin-cli.py state 'Madhya Pradesh' -a active
+Total active cases in Madhya Pradesh are: 90796
 
-❯ covid19/bin/python3 covid.py state 'Madhya Pradesh' -a recovered
-Total recovered cases in Madhya Pradesh are: 7903
+python3 covin-cli.py state 'Madhya Pradesh' -a recovered
+Total recovered cases in Madhya Pradesh are: 466915
 
-❯ covid19/bin/python3 covid.py state 'Madhya Pradesh' -a deceased
-Total deceased cases in Madhya Pradesh are: 465
+python3 covin-cli.py state 'Madhya Pradesh' -a deceased
+Total deceased cases in Madhya Pradesh are: 5616
+
 ```
 
 
@@ -122,7 +123,7 @@ Command district accepts 3 flags
 
 Note:- To get Indian States and Union Territories names and respective districts please refer below Wiki
 
-[[https://en.wikipedia.org/wiki/List_of_districts_in_India][Indian States and Union Territories and respective districts]]
+[Indian States and Union Territories and respective districts](https://en.wikipedia.org/wiki/List_of_districts_in_India)
 
 or you can CLI itself to get the districts in a state
 
