@@ -22,8 +22,7 @@ def main():
 
 def states_data(statename):
     '''
-    function queries the covid19 india api and get the state data
-    district wise
+    returns state data district wise
     '''
     try:
         with urllib.request.urlopen(api_url) as response:
@@ -45,7 +44,7 @@ def states_data(statename):
 )
 def country(acrd):
     '''
-    function return the total cases across country(India)
+    returns the total cases across country(India)
     '''
     with urllib.request.urlopen(api_url) as response:
         if response.getcode() == 200:
@@ -57,7 +56,7 @@ def country(acrd):
                     for district, district_info in state_info['districtData'].items():
                         count += district_info.get(acrd)
                 click.echo(
-                    print(f"Total {acrd} cases in India are : {count}", end=''))
+                    print(f"{acrd} cases in India are : {count}", end=''))
             except Exception as e:
                 click.echo(
                     print(f"Unsupported Operand {acrd}. Supported Operands are: \n{os.linesep.join(operands)}"))
