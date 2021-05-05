@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
         name="covin-cli",
-        version=1.0,
+        version=2.0,
         author="Abhishek Amralkar",
         author_email="abhishekammralkar@gmail.comm",
         description="A COVID19 India CLI package",
