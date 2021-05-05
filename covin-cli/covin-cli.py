@@ -44,7 +44,7 @@ def states_data(statename):
 )
 def country(acrd):
     '''
-    returns the total cases across country(India)
+    Return the total cases across country(India)
     '''
     with urllib.request.urlopen(api_url) as response:
         if response.getcode() == 200:
@@ -56,7 +56,7 @@ def country(acrd):
                     for district, district_info in state_info['districtData'].items():
                         count += district_info.get(acrd)
                 click.echo(
-                    print(f"{acrd} cases in India are : {count}", end=''))
+                    print(f"{acrd} cases in India: {count}", end=''))
             except Exception as e:
                 click.echo(
                     print(f"Unsupported Operand {acrd}. Supported Operands are: \n{os.linesep.join(operands)}"))
@@ -68,13 +68,13 @@ def country(acrd):
 @main.command()
 def states_name():
     '''
-    function return the Indian States and Union Territories Name
+    Return the Indian States and Union Territories Name
     '''
     with urllib.request.urlopen(api_url) as response:
         if response.getcode() == 200:
             source = response.read()
             states_data = json.loads(source)
-            print(f"India's States and Union Territories Names are:")
+            print(f"India's States and Union Territories Names:")
             print("-" * 60)
             state_list = []
             try:
@@ -82,7 +82,7 @@ def states_name():
                     state_list.append(state)
                 
                 click.echo(
-                    print(f"Total States and Union Territories count in India is: {len(state_list)}")
+                    print(f"States and Union Territories count in India is: {len(state_list)}")
                 )
                 click.echo(
                     print(state_list[1:]))
@@ -99,7 +99,7 @@ def states_name():
 @click.argument('statename')
 def districts_name(statename):
     '''
-    function return the districts name given the state name
+    Return the districts name given the state name
     '''
     try:
         state = states_data(statename)
@@ -123,8 +123,7 @@ def districts_name(statename):
 )
 def state(statename, acrd):
     '''
-    function returns the total statewise cases like
-    active, recovered, deceased, confirmed
+    Return the total statewise cases
     '''
     state = states_data(statename)
     #print(state)
@@ -132,7 +131,7 @@ def state(statename, acrd):
     for district, info in state.items():
         count += info.get(acrd)
     click.echo(
-                print(f"Total {acrd} cases in {statename} are: {count}", end=''))
+                print(f"{acrd} cases in {statename}: {count}", end=''))
     return count
 
 
@@ -140,7 +139,7 @@ def state(statename, acrd):
 @click.argument('statename')
 def state_cases(statename):
     '''
-    fucntion returns the state data district wise
+    Return the state data district wise
     with all the keys
     '''
     state = states_data(statename)
@@ -161,7 +160,7 @@ def state_cases(statename):
 )
 def districts_cases(statename, acrd):
     '''
-    function returns the district wise data for the key
+    Return the district wise data for the key
     active, deceased, confirmed, recovered, delta.
     It takes input as a state name and the key mentioned above
     with flag -a or --acrd.
@@ -170,7 +169,7 @@ def districts_cases(statename, acrd):
     for district, info in state.items():
         #print(type(info))
         click.echo(
-            print(f"{acrd} cases in district {district} are: {info.get(acrd)}", end=''))
+            print(f"{acrd} cases in district {district}: {info.get(acrd)}", end=''))
 
 
 @main.command()
@@ -182,7 +181,7 @@ def districts_cases(statename, acrd):
 )
 def district(statename, districtname, acrd):
     '''
-    function returns the district wise data for the key
+    Return the district wise data for the key
     active, deceased, confirmed, recovered, delta.
     It takes input as a state name and the key mentioned above
     with flag -a or --acrd.
@@ -191,7 +190,7 @@ def district(statename, districtname, acrd):
     for district, info in state.items():
         if district.lower() == districtname.lower():
             click.echo(
-                print(f"{acrd} cases in district {districtname} are: {info.get(acrd)}", end=''))
+                print(f"{acrd} cases in district {districtname}: {info.get(acrd)}", end=''))
 
 
 
