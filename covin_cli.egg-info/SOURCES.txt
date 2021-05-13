@@ -1,0 +1,8 @@
+README.md
+setup.py
+covin-cli/__init__.py
+covin-cli/covin-cli.py
+covin_cli.egg-info/PKG-INFO
+covin_cli.egg-info/SOURCES.txt
+covin_cli.egg-info/dependency_links.txt
+covin_cli.egg-info/top_level.txt
